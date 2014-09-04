@@ -29,6 +29,8 @@
 
     if (navigator.serviceWorker) {
       log("Browser supports Service Worker");
+	  console.log("navigator :");
+	  console.log(navigator.serviceWorker.current);
       if (navigator.serviceWorker.current) {
         log("Current Service Worker state: \\o/");
         log('Go to chrome://serviceworker-internals/ to see Service Worker debug output');
