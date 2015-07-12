@@ -1,35 +1,340 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/dashboard/ -->
+<html lang="en">
+
 <head>
-<title>musangJS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="lib/favicon.ico">
+
+    <title>My Porfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="lib/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/circle.css">
+
+    <link href="lib/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-<script src="math.js" type="text/javascript"></script>
-<script src="app.js"></script>
- <script type="text/javascript">
-    // the default instance of math.js is available as 'math'
-    // range will output a Matrix
-    math.range(0, 4);       // Matrix [0, 1, 2, 3]
 
-    // change the configuration of math from Matrices to Arrays
-    math.config({
-      matrix: 'array'      // Choose 'matrix' (default) or 'array'
-    });
+<body data-spy="scroll" data-target="#home">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#about">nuar046</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <!--
+                    <li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+-->
+                    <li class="active"><a href="#about">About Me<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li><a href="#technology">Languages</a>
+                    </li>
+                    <li><a href="#api">API/Framework</a>
+                    </li>
+                    <li><a href="#proposal">Propose technology for web application</a>
+                    </li>
+                    
+                    
+                </ul>
+                <!--
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+-->
+            </div>
+        </div>
+    </nav>
 
-    // range will output an Array 
-    math.range(0, 4);       // Array [0, 1, 2, 3]
+    <div class="container-fluid">
+        <div class="row">
+            <!--
+            <div id="sidebar2" class="col-sm-3 col-md-2 sidebar collapse">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="#about">About Me</a>
+                    </li>
+                    <li><a href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-sidebar">
+-->
+            <!--            <li><a href="">Nav item</a></li>-->
+            <!--
+                </ul>
+                <ul class="nav nav-sidebar">
+-->
+            <!--            <li><a href="">Nav item again</a></li>-->
+            <!--
+                </ul>
+            </div>
+-->
 
-    // create a new instance of math.js with bignumber configuration
-    var bigmath = math.create({
-      number: 'bignumber',  // Choose 'number' (default) or 'bignumber'
-      precision: 32         // 64 by default, only applicable for BigNumbers
-    });
+            <!--            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">-->
+            <div class="container">
+                <h1 id="about" class="page-header">About Me</h1>
+                <div>
+                    <p> Hi , my name is anwar, a young boy from eastern Malaysia. In my normal life, i am just a guy who like to play a lot and travelling a lot. It is because since 2006, i have been go to school which a bot far from my home. From there, it build me up a feeling to go travel and meet new friends,thus more culture we learn and more tolenrence us towards a new culture. Nevertheless, that's my life outside of professional. Speaking of professional, i have been started to work since 2013. My first job was read others people code and fix any bug that reported by the tester. It was ASP.NET, from there i had learn that a beautiful code program give a meaningful the name of variable thus it help other developers like me to resolve any issue that might be appear in near future. p/s: this is my first website, so a lot of things that i'm gonna do this website, but it is still a newborn,so this one is very simple.</p>
+                </div>
+                <h2 id="portfolio" class="sub-header">Portfolio</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Project Name</th>
+                            <th>Year</th>
+                            <th>Description</th>
+                            <th>My role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>e-IPMS (IP Mgt System)</td>
+                            <td>2013</td>
+                            <td>is an IP management system. It manage the registration of the patent that to be file in Malaysian patent,myIPO. It is not only cover registration only, it also cover the examination,to make sure this new register patent is unique and did not same with others patents. From there, it gone through the looping process of correction until it had been approved by the one who authorize</td>
+                            <td>• Maintaining/Debugging the system by receiving the ticket raise from the tester through JIRA
+                                <br/> • Improve the form validation from the system by implementing HTML5 and Javascript (front side) and ASP.NET(server side)
+                                <br/> • Experience in daily scrum meeting, by that improve the focus of the task, which task need to be done first and ask for any help if that issue could be resolve in one day.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>HRIS (Human Resource Information System)</td>
+                            <td>2013-2014</td>
+                            <td>• HRIS focus on performance management modules which facilitate HR staff to manage performance management forms, allow MIMOS staff to setup performance review, submit performance checkpoint and allow Head of Department, HOD to manage ranking of performance review.
+                                <br/> • On the other hand, the system design should consider the expansion of modules / functions such as recruiting module, training & development, organizational management, job design and evaluation.
+                            </td>
+                            <td>• Propose the architecture of the web using concept of singel-page-app using MVVM.
+                                <br/> • Propose the modularization of MVVM using knockoutJS, so that the variable definition does not overlapping with others variable that had a same name, thus removing the file conflict whereas two guys which working on the same file, which for me, in opinion, it is unhealthy way to maintain a system and work as team.
+                            </td>
+                        </tr>
+<!--
+                        <tr>
+                            <td>3</td>
+                            <td>TPC-OHCIS(Teleprimary Clinical- Oral Health Care Information System) v.1.0</td>
+                            <td>2014-2015</td>
+                            <td>• TPC-OHCIS is a system management that will ease the clinic staff in their daily staff. From registration of the patient until the payment of the patient. So that, it reduce the used of the paper and improve the accessibility of this system because it build on the website application instead of desktop application,thus it will be able to access from mobile hardware.
+                            </td>
+                            <td>• Propose the front-end architecture of the web using concept of singel-page-app using MVC.
+                                <br/> • Propose the modularization of MVC using angularJS, so that this system is able to scalable.
+                            </td>
+                        </tr>
+-->
+                    </tbody>
+                </table>
+                <h2 id="technology" class="sub-header">Technology</h2>
+                <div class="row placeholders">
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="lib/HTML5.png" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>HTML5</h4>
+                        <div class="c100 p70 orange">
+                            <span>70%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <!-- <span class="text-muted">Something else</span>-->
+                    </div>
+                    <!--
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="lib/css3.png" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>Client : [Javascript]</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+-->
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="lib/js.png" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>Client : [Javascript]</h4>
+                        <div class="c100 p80 yellow">
+                            <span>80%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="lib/asp-net.gif" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>Server :[ASP.NET]</h4>
+                        <div class="c100 p50">
+                            <span>50%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    // parser will parse numbers as BigNumber now:
-    bigmath.eval('1 / 3');  // BigNumber, 0.33333333333333333333333333333333
-  </script>
-<textarea id="papanHitam" rows="4" cols="50">
-</textarea>
-<input type="submit" value="Submit" onclick="readInput()"></input>
+                <h2 id="api" class="sub-header">API/Framework</h2>
+                <div class="row placeholders">
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="lib/angularJS.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>AngularJS</h4>
+                        <div class="c100 p80 orange">
+                            <span>80%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <!-- <span class="text-muted">Something else</span>-->
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="lib/gruntJs.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>GruntJS</h4>
+                        <div class="c100 p70 yellow">
+                            <span>70%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="lib/jasmine.png" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>JasmineJS</h4>
+                        <div class="c100 p60">
+                            <span>60%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="lib/knockout.png" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>KnockoutJS</h4>
+                        <div class="c100 p80">
+                            <span>80%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row placeholders">
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="lib/KendoUI.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>KendoUI</h4>
+                        <div class="c100 p80">
+                            <span>80%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img src="lib/node.png" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>nodeJS</h4>
+                        <div class="c100 p50">
+                            <span>50%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="proposal" class="sub-header">Propose Technology</h2>
+                <p>Are you thinking of building web application.Here is my proposal for building a web application.</p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Techology/Method</th>
+                            <th>Code Quality</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Project Management</td>
+                            <td>Agile</td>
+                            <td>IDK</td>
+                            <td>only 1 year exeperience but this project management is very engaging because it allowed the developer to focus which feature that are going to build. For example, one devloper were task to build a web app but to build a web app involve of many task. So, to make life easier, from that a big task: building a web application, we would separate it into smaller task like make HTML form, make form validation , make layout and others. It help the developer to focus on their task , also help the management team to know what are the developer currently doing.</td>
+                        </tr>
+                        <tr>
+                            <td>Offline</td>
+                            <td>Service workers</td>
+                            <td>JasmineJS</td>
+                            <td>So that, our web app are available even in a very limited connection like 3g and available even it is in offline. A proposed technology by Google for improving more offline exeperience</td>
+                        </tr>
+                        <tr>
+                            <td>UI</td>
+                            <td>Bootstrap</td>
+                            <td>IDK</td>
+                            <td>A very populat HTML template that had a very nice interface and mobile friendly</td>
+                        </tr>
+                        <tr>
+                            <td>Client Scripting</td>
+                            <td>AngularJS or AngularJS 2</td>
+                            <td>JasmineJS</td>
+                            <td>need to build single-page-app?, here is the propose solution because it had a very nice modularization thus it ease the developer to scalable the app and maintain the app.</td>
+                        </tr>
+                        <tr>
+                            <td>Server Side</td>
+                            <td>ASP.NET</td>
+                            <td>IDK</td>
+                            <td>Honestly, i only gone throguh their tutorial on using mvc5. Super fast and Entity framework are quite powerful because i am able to build a complete system(UI until database) in an hour.Plus, we do not need to find more third party plugin because EF already cover most of it. It gonna on my training list for this one. Unlike Java, we need to find third party plugin thus need to justify for every plugin that we used</td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td>MSSSQL</td>
+                            <td>IDK</td>
+                            <td>Also still very new, but as to tally with server side, asp.net . Its better to used this one, remove many hour of study if using other database like mysql,oracle and postgres</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/app.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="lib/ie10-viewport-bug-workaround.js"></script>
+
+
 </body>
+
 </html>

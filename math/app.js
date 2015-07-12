@@ -55,4 +55,11 @@ function readInput(){
  
  }
  
- 
+function compositeFunc()
+{
+    var arrayOfLines = document.getElementById('papanHitam').value.split('\n');  
+} 
+
+
+
+
